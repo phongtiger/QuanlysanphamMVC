@@ -7,7 +7,7 @@
 <body>
 <h1>Products</h1>
 <p>
-  <a href="/products?action=create">Create new customer</a>
+  <a href="/products?action=create">Create new product</a>
 </p>
 <table border="1">
   <tr>
