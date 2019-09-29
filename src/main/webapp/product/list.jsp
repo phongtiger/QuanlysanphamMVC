@@ -6,6 +6,11 @@
 </head>
 <body>
 <h1>Products</h1>
+<form method="post">
+  <input type="text" name="search" id="search">
+  <input type="submit" value="Search">
+</form>
+<br/>
 <p>
   <a href="/products?action=create">Create new product</a>
 </p>
