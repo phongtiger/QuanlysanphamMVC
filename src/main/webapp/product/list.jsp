@@ -6,9 +6,13 @@
 </head>
 <body>
 <h1>Products</h1>
-<form method="post">
-  <input type="text" name="search" id="search">
-  <input type="submit" value="Search">
+<form method="post" action="/products?action=search">
+    <table>
+      <tr>
+        <td><input type="text" name="search" id="search"></td>
+        <td><input type="submit" value="Search"></td>
+      </tr>
+    </table>
 </form>
 <br/>
 <p>

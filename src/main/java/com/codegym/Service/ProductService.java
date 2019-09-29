@@ -2,6 +2,7 @@ package com.codegym.Service;
 
 import com.codegym.Model.Product;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface ProductService {
@@ -14,5 +15,5 @@ public interface ProductService {
     void update(int id, Product product);
 
     void remove(int id);
-    List<Product> search(String name);
+    ArrayList<Product> findByName(String name);
 }

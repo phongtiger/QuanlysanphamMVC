@@ -13,10 +13,10 @@ public class ProductServiceImpl implements ProductService {
     static {
         products = new HashMap<>();
         products.put(1, new Product(1, "Iphone7", "4.7in", "iphone", 1));
-        products.put(2, new Product(2, "Iphone7", "4.7in", "iphone", 1));
-        products.put(3, new Product(3, "Iphone7", "4.7in", "iphone", 1));
-        products.put(4, new Product(4, "Iphone7", "4.7in", "iphone", 1));
-        products.put(5, new Product(5, "Iphone7", "4.7in", "iphone", 1));
+        products.put(2, new Product(2, "Iphone8", "4.7in", "iphone", 1));
+        products.put(3, new Product(3, "IphoneX", "4.7in", "iphone", 1));
+        products.put(4, new Product(4, "Iphone11", "4.7in", "iphone", 1));
+        products.put(5, new Product(5, "Iphone11 max", "4.7in", "iphone", 1));
     }
 
     @Override
@@ -45,15 +45,15 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> search(String name) {
-        ArrayList<Product> newListProducts = new ArrayList<>();
-        ArrayList<Product> listProducts = new ArrayList<>(products.values());
-        for (Product product : listProducts) {
-            if (product.getName().equals(name)) {
-                newListProducts.add(product);
+    public ArrayList<Product> findByName(String name) {
+        ArrayList<Product> list=new ArrayList<>(products.values());
+        ArrayList<Product> productArrayList=new ArrayList<>();
+        for (Product product : list){
+            if (product.getName().equals(name)){
+                productArrayList.add(product);
             }
         }
-        return newListProducts;
+        return productArrayList;
     }
 }
 

@@ -19,7 +19,7 @@
         <table>
             <tr>
                 <td>Id: </td>
-                <td><input type="number" name="di" id="id" value="${requestScope["product"].getId()}"></td>
+                <td><input type="number" name="id" id="id" value="${requestScope["product"].getId()}"></td>
             </tr>
             <tr>
                 <td>Name: </td>
